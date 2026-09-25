@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sw">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -109,12 +110,14 @@
             line-height: 1.2;
             margin-bottom: 10px;
         }
-.hero-content h1 span {
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    background-clip: text; /* <--- ONGEZA MSTARI HUU HAPA */
-    -webkit-text-fill-color: transparent;
-}
+
+        .hero-content h1 span {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            /* <--- ONGEZA MSTARI HUU HAPA */
+            -webkit-text-fill-color: transparent;
+        }
 
         .hero-content p {
             color: var(--text-muted);
@@ -186,8 +189,15 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-15px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
         }
 
         /* SECTIONS COMMON */
@@ -371,12 +381,22 @@
                 text-align: center;
                 gap: 40px;
             }
-            .hero-content h1 { font-size: 2.3rem; }
-            .btn-group { justify-content: center; }
-            .navbar { display: none; }
+
+            .hero-content h1 {
+                font-size: 2.3rem;
+            }
+
+            .btn-group {
+                justify-content: center;
+            }
+
+            .navbar {
+                display: none;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <!-- NAVBAR -->
@@ -396,7 +416,8 @@
         <div class="hero-content">
             <span class="badge"><i class="fa-solid fa-code"></i> Software Engineering Student</span>
             <h1>Hi, I'm <span>Yussuf Hija Makame</span></h1>
-            <p>A passionate Web Developer & Systems Designer based in Zanzibar. Building responsive, high-performance web applications and backend database solutions.</p>
+            <p>A passionate Web Developer & Systems Designer based in Zanzibar. Building responsive, high-performance
+                web applications and backend database solutions.</p>
             <div class="btn-group">
                 <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> View Projects</a>
                 <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
@@ -441,11 +462,12 @@
     <section id="projects">
         <h2 class="section-title">Featured <span>Projects</span></h2>
         <div class="projects-grid">
-            
+
             <div class="project-card">
                 <div>
                     <h3 class="project-title">Tourism Promotion Portal</h3>
-                    <p class="project-desc">A web application designed to promote local attractions, cultural sites, and travel packages in Zanzibar.</p>
+                    <p class="project-desc">A web application designed to promote local attractions, cultural sites, and
+                        travel packages in Zanzibar.</p>
                     <div class="tech-tags">
                         <span class="tag">HTML5</span>
                         <span class="tag">CSS3</span>
@@ -453,41 +475,48 @@
                     </div>
                 </div>
                 <div class="project-links">
-                    <a href="https://github.com/Yussuf25010/zanzibar-tourism" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-                    <a href="https://yussuf25010.github.io/zanzibar-tourism/" target="_blank">Live Demo</a>                                                        " target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                    <a href="https://github.com/Yussuf25010/zanzibar-tourism" target="_blank"><i
+                            class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="https://yussuf25010.github.io/zanzibar-tourism/" target="_blank"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
                 </div>
+                " target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
             </div>
+        </div>
 
-            <div class="project-card">
-                <div>
-                    <h3 class="project-title">Dispensary Stock System</h3>
-                    <p class="project-desc">A C++ command-line application built to manage medication inventory, track dispensing, and control reorders.</p>
-                    <div class="tech-tags">
-                        <span class="tag">C++</span>
-                        <span class="tag">OOP</span>
-                        <span class="tag">Data Structures</span>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/Yussuf25010" target="_blank"><i class="fa-brands fa-github"></i> Source Code</a>
+        <div class="project-card">
+            <div>
+                <h3 class="project-title">Dispensary Stock System</h3>
+                <p class="project-desc">A C++ command-line application built to manage medication inventory, track
+                    dispensing, and control reorders.</p>
+                <div class="tech-tags">
+                    <span class="tag">C++</span>
+                    <span class="tag">OOP</span>
+                    <span class="tag">Data Structures</span>
                 </div>
             </div>
+            <div class="project-links">
+                <a href="https://github.com/Yussuf25010" target="_blank"><i class="fa-brands fa-github"></i> Source
+                    Code</a>
+            </div>
+        </div>
 
-            <div class="project-card">
-                <div>
-                    <h3 class="project-title">Student Registration Portal</h3>
-                    <p class="project-desc">A web portal integrating frontend enrollment forms with backend database logic for school admin.</p>
-                    <div class="tech-tags">
-                        <span class="tag">PHP</span>
-                        <span class="tag">MySQL</span>
-                        <span class="tag">HTML/CSS</span>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/Yussuf25010" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-                    <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+        <div class="project-card">
+            <div>
+                <h3 class="project-title">Student Registration Portal</h3>
+                <p class="project-desc">A web portal integrating frontend enrollment forms with backend database logic
+                    for school admin.</p>
+                <div class="tech-tags">
+                    <span class="tag">PHP</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">HTML/CSS</span>
                 </div>
             </div>
+            <div class="project-links">
+                <a href="https://github.com/Yussuf25010" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+        </div>
 
         </div>
     </section>
@@ -497,17 +526,22 @@
         <h2 class="section-title">Get In <span>Touch</span></h2>
         <div class="contact-box">
             <h3>Let's build something extraordinary together!</h3>
-            <p style="color: var(--text-muted); margin-top: 10px;">Feel free to reach out for collaborations or project inquiries.</p>
-            
+            <p style="color: var(--text-muted); margin-top: 10px;">Feel free to reach out for collaborations or project
+                inquiries.</p>
+
             <div style="margin-top: 25px;">
-                <p><i class="fa-solid fa-envelope" style="color: var(--primary-color);"></i> yussufmakame676@gmail.com</p>
-                <p style="margin-top: 8px;"><i class="fa-solid fa-location-dot" style="color: var(--primary-color);"></i> Zanzibar, Tanzania</p>
+                <p><i class="fa-solid fa-envelope" style="color: var(--primary-color);"></i> yussufmakame676@gmail.com
+                </p>
+                <p style="margin-top: 8px;"><i class="fa-solid fa-location-dot"
+                        style="color: var(--primary-color);"></i> Zanzibar, Tanzania</p>
             </div>
 
             <div class="social-icons">
-                <a href="https://github.com/Yussuf25010" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/Yussuf25010" target="_blank" title="GitHub"><i
+                        class="fa-brands fa-github"></i></a>
                 <a href="mailto:yussufmakame676@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://wa.me/255624705329" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://wa.me/255624705329" target="_blank" title="WhatsApp"><i
+                        class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
     </section>
@@ -518,4 +552,5 @@
     </footer>
 
 </body>
+
 </html>

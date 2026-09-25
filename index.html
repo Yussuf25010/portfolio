@@ -310,22 +310,25 @@
             display: flex;
             gap: 15px;
         }
-
-        .project-links a {
-            color: var(--text-color);
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            transition: 0.3s;
-        }
-
-        .project-links a:hover {
-            color: var(--primary-color);
-        }
-
+ .project-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+ .project-links a:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
         /* CONTACT & FOOTER */
         .contact-box {
             background: var(--card-bg);
@@ -475,12 +478,11 @@
                     </div>
                 </div>
                 <div class="project-links">
-                    <a href="https://github.com/Yussuf25010/zanzibar-tourism" target="_blank" class="btn"><i
+                    <a href="https://github.com/Yussuf25010/zanzibar-tourism" target="_blank"><i
                             class="fa-brands fa-github"></i> GitHub</a>
-                    <a href="https://yussuf25010.github.io/zanzibar-tourism/" target="_blank" class="btn"><i
+                    <a href="https://yussuf25010.github.io/zanzibar-tourism/" target="_blank"><i
                             class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
             </div>
-
             <div class="project-card">
                 <div>
                     <h3 class="project-title">Dispensary Stock System</h3>
